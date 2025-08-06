@@ -154,7 +154,7 @@ const ComponentDashboard = () => {
         <div className="card bg-secondary text-secondary-content">
           <div className="card-body">
             <h2 className="card-title">Current CGPA</h2>
-            <p className="text-4xl font-bold">3.75</p>
+            <p className="text-4xl font-bold">3.49</p>
           </div>
         </div>
         
