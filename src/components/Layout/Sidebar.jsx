@@ -9,6 +9,10 @@ const Sidebar = () => {
     { path: '/home/assignments', name: 'Assignments', icon: <FaTasks /> },
   ];
 
+  const closeDrawer = () => {
+    document.getElementById('my-drawer').checked = false;
+  };
+
   return (
     <div className="drawer-side">
       <label htmlFor="my-drawer" className="drawer-overlay"></label>
@@ -19,6 +23,7 @@ const Sidebar = () => {
             <NavLink
               to={item.path}
               className={({ isActive }) => (isActive ? 'active' : '')}
+              onClick={closeDrawer}
             >
               {item.icon}
               {item.name}
